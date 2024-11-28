@@ -1,0 +1,2257 @@
+[
+    {
+        "id": "802e1c685bb8981f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "259b48fedec91c81",
+        "type": "group",
+        "z": "802e1c685bb8981f",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f59a5e120d0ce03e",
+            "166e3925389c3bba",
+            "cd6184103d3da902",
+            "fb5827c5ef1bf74f",
+            "a63293590d3a05c5",
+            "d22f03954e851d02",
+            "73a14f257075a419",
+            "b26cf58d1721978b",
+            "3b7187f32c36bd7c",
+            "bd863b6ca52a013f",
+            "6013134b3c10b2e5",
+            "1956796416ea440f",
+            "6de520bafd100292",
+            "3411475799cfb2cd",
+            "e04817bfc052208d",
+            "33ed70d6113c33fb",
+            "656014cd97ec62dc",
+            "f9baf10396d79b33",
+            "4b4e287d277c91e6",
+            "2eb748012a0e4878",
+            "1daf05d3a0007676",
+            "578e9973cd2a3ba3",
+            "3b7c2ab53257ffd2",
+            "e1e3da536025fb62",
+            "f2207a0f18a4cebc",
+            "e7fea5b24b9b8519",
+            "f7bfab3c8013645c",
+            "736c866f602d956f",
+            "c5d2118f761eb801",
+            "da378e5a7e912eac",
+            "ae1cc9edb685c15d",
+            "075813ebe9b186be",
+            "dac27b9156d35d74",
+            "131b21fe4ddc58ac",
+            "c4d8c110018be856",
+            "ead044746c5633b2",
+            "9e4e9018cf40ddb4",
+            "5b8a9096f4780ad9",
+            "8a1cfa4c3b419ea8",
+            "5dceec49346fcacb",
+            "5dfab51a7f962a84",
+            "c410f905bbbb600a",
+            "d9c0727c2740bed6",
+            "28f28d1e0c36ccaa",
+            "1cf0654a2a877f3a",
+            "9294613d22c179b5",
+            "1951c6bf2b2da8f3",
+            "67a459c3fe548e74",
+            "73036576b334d07d",
+            "fb32aa07fe26ecd8",
+            "7ac8ae79e25c7ae6",
+            "e0d638c177115c79",
+            "3837c60c30598197",
+            "55d35c4dd87d54f0",
+            "8fb49856c5f31a1e",
+            "b0ce012c7417fbee",
+            "718a0cda91d36b56",
+            "2086a9f0685e7969",
+            "8d82796be2988258",
+            "e2c0b0665fd011a0",
+            "632799248deea83d",
+            "7fe51144740fc7a7",
+            "5a4bf48f82c7b40d",
+            "6ad3f18c25c12765",
+            "89e7671e4a498cce",
+            "f0c18f1d3103f57b",
+            "b69d10c1df1783ac",
+            "c4322db4d06ca4a2",
+            "3fa85484b311b7d5",
+            "18e7e912432a2087",
+            "072cf50c903d4906",
+            "3619c55f585b95df",
+            "321ea00c30ebc5e7",
+            "8473aa6af9053fd3",
+            "0709847cd4c06cf9",
+            "85b7f083296fd2e6",
+            "837edad05243a1da",
+            "f5fb07c7c585d586",
+            "6a1e6805deb8f28d",
+            "ede0ddfc0c429b82",
+            "0c9481b1aacc412d",
+            "9af8a25487bdeb58",
+            "df09332d89aacbac",
+            "eb80673f54c10551",
+            "372f5c888b39542a",
+            "c57010af1e1501aa",
+            "427fb35dd6bc8a1a",
+            "9d7a99b75271df4a",
+            "ef7eb1a671ba6297",
+            "612da653025c13a1",
+            "03ea55d6442dfa96",
+            "ba4b612f34ed2cbd",
+            "6c13ee493e79dec3",
+            "233eb91be3fe264a",
+            "29a7e79bd751feb5",
+            "c18b612815ecbe1c",
+            "0156714096eed26d"
+        ],
+        "x": 14,
+        "y": 39,
+        "w": 2152,
+        "h": 1582
+    },
+    {
+        "id": "f59a5e120d0ce03e",
+        "type": "http request",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "http request forecast",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.forecast.solar/XXXXXXXXXXXXXXXX/estimate/Breitengrad/Laengengrad/45/-20/16.440/45/55/8.085",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "cd6184103d3da902"
+            ]
+        ]
+    },
+    {
+        "id": "166e3925389c3bba",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "f59a5e120d0ce03e"
+            ]
+        ]
+    },
+    {
+        "id": "cd6184103d3da902",
+        "type": "json",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 490,
+        "y": 640,
+        "wires": [
+            [
+                "fb5827c5ef1bf74f",
+                "9af8a25487bdeb58",
+                "c57010af1e1501aa"
+            ]
+        ]
+    },
+    {
+        "id": "fb5827c5ef1bf74f",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Vorhersage",
+        "func": "var date1 = new Date();\nvar date2 = new Date();\nvar date3 = new Date();\n\nmsg.payload11 = getSelectString(addMinutes(date1,15));\nmsg.payload22 = getSelectString(addMinutes(date2,30));\nmsg.payload33 = getSelectString(addMinutes(date3,45));\nmsg.payload1 = msg.payload.result.watts[msg.payload11];\nmsg.payload2 = msg.payload.result.watts[msg.payload22];\nmsg.payload3 = msg.payload.result.watts[msg.payload33];\n\nreturn msg;\n\nfunction addMinutes(date, minutesAdd){\n    if(date.getMinutes() + minutesAdd <= 59){\n        date.setMinutes(date.getMinutes() + minutesAdd);\n        //date.setHours(13);\n    }else{\n        var minutesSet = date.getMinutes() + minutesAdd - 60;\n        var hoursSet = date.getHours() + 1;\n        date.setMinutes(minutesSet);\n        date.setHours(hoursSet);\n        //date.setHours(13);\n    }\n    return date;\n}\n\nfunction getSelectString(date){\nvar day = date.getDate()\nif (day<=9){\n    day = '0'+day.toString();\n}else{\n    day = day.toString();\n}\nvar month = (date.getMonth()+1).toString()\nif (month<=9){\n    month = '0'+ month.toString();\n}else{\n    month = month.toString();\n}\nvar year = date.getFullYear().toString()\nvar hour = date.getHours()\nvar minutes = date.getMinutes()\nvar minutesRounded;\n\nif(0  <= minutes && minutes < 7){minutesRounded = '00'} else\nif(7  <= minutes && minutes < 23){minutesRounded = '15'} else\nif(23 <= minutes && minutes < 37){minutesRounded = '30'} else\nif(37 <= minutes && minutes < 53){minutesRounded = '45'} else\nif(53 <= minutes && minutes <= 59){\n    minutesRounded = '00';\n    hour = hour +1;\n}\n\nif (hour<=9){\n    hour = '0'+hour.toString();\n}else{\n    hour = hour.toString();\n}\n\n\nvar selectString = year + '-' + month + '-' + day + ' ' + hour + ':' + minutesRounded + ':' + '00';\nreturn selectString;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 640,
+        "wires": [
+            [
+                "b26cf58d1721978b",
+                "7ac8ae79e25c7ae6",
+                "e0d638c177115c79",
+                "3837c60c30598197",
+                "632799248deea83d",
+                "7fe51144740fc7a7",
+                "5a4bf48f82c7b40d",
+                "ede0ddfc0c429b82",
+                "6a1e6805deb8f28d",
+                "f5fb07c7c585d586"
+            ]
+        ]
+    },
+    {
+        "id": "a63293590d3a05c5",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "d22f03954e851d02",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "73a14f257075a419",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "b26cf58d1721978b",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Freigabe WP Vorhersage",
+        "func": "var minimumPower = global.get(\"Mindestvorhersage_PV\");\nif(msg.payload1 > minimumPower && msg.payload2 > minimumPower && msg.payload3 > minimumPower){\n    global.set(\"Freigabe_Waermepumpe_Vorhersage\", true)\n}else{\n    global.set(\"Freigabe_Waermepumpe_Vorhersage\", false)\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b7187f32c36bd7c",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Freigabe_Waermepumpe_Vorhersage",
+        "payloadType": "global",
+        "x": 1240,
+        "y": 620,
+        "wires": [
+            [
+                "bd863b6ca52a013f",
+                "fb32aa07fe26ecd8"
+            ]
+        ]
+    },
+    {
+        "id": "bd863b6ca52a013f",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6013134b3c10b2e5",
+        "type": "ioBroker in",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "P_LEW",
+        "topic": "0_userdata.0.Stromzaehler_neu.P_LEW",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "outFormat": "MQTT",
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "1956796416ea440f"
+            ]
+        ]
+    },
+    {
+        "id": "1956796416ea440f",
+        "type": "change",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ueberschuss_PV",
+                "pt": "global",
+                "to": "$number(msg.payload)*(-1)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6de520bafd100292",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Ueberschuss_PV",
+        "payloadType": "global",
+        "x": 1170,
+        "y": 380,
+        "wires": [
+            [
+                "3411475799cfb2cd",
+                "1cf0654a2a877f3a"
+            ]
+        ]
+    },
+    {
+        "id": "3411475799cfb2cd",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e04817bfc052208d",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 580,
+        "wires": [
+            [
+                "33ed70d6113c33fb"
+            ]
+        ]
+    },
+    {
+        "id": "33ed70d6113c33fb",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Freigabe Einschalten Wärmepumpe Überschuss",
+        "func": "var Ueberschuss_PV = global.get(\"Ueberschuss_PV\")\nvar Mindestueberschuss_PV = global.get(\"Mindestueberschuss_PV\")\n\nif(Ueberschuss_PV > Mindestueberschuss_PV){\n    global.set(\"Freigabe_Waermepumpe_Ueberschuss\", true)\n}else{\n    global.set(\"Freigabe_Waermepumpe_Ueberschuss\", false)\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "656014cd97ec62dc",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "f9baf10396d79b33"
+            ]
+        ]
+    },
+    {
+        "id": "f9baf10396d79b33",
+        "type": "change",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Mindestueberschuss_PV",
+                "pt": "global",
+                "to": "2000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b4e287d277c91e6",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Mindestueberschuss_PV",
+        "payloadType": "global",
+        "x": 1200,
+        "y": 140,
+        "wires": [
+            [
+                "8473aa6af9053fd3",
+                "c410f905bbbb600a"
+            ]
+        ]
+    },
+    {
+        "id": "2eb748012a0e4878",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "1daf05d3a0007676"
+            ]
+        ]
+    },
+    {
+        "id": "1daf05d3a0007676",
+        "type": "change",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Mindestvorhersage_PV",
+                "pt": "global",
+                "to": "4000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "578e9973cd2a3ba3",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Mindestvorhersage_PV",
+        "payloadType": "global",
+        "x": 1190,
+        "y": 200,
+        "wires": [
+            [
+                "3b7c2ab53257ffd2",
+                "d9c0727c2740bed6"
+            ]
+        ]
+    },
+    {
+        "id": "3b7c2ab53257ffd2",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e1e3da536025fb62",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Freigabe_Waermepumpe_Ueberschuss",
+        "payloadType": "global",
+        "x": 1240,
+        "y": 560,
+        "wires": [
+            [
+                "f2207a0f18a4cebc",
+                "73036576b334d07d"
+            ]
+        ]
+    },
+    {
+        "id": "f2207a0f18a4cebc",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e7fea5b24b9b8519",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1040,
+        "wires": [
+            [
+                "f7bfab3c8013645c"
+            ]
+        ]
+    },
+    {
+        "id": "f7bfab3c8013645c",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "WP Anschalten",
+        "func": "var Freigabe_Waermepumpe_Ueberschuss = global.get(\"Freigabe_Waermepumpe_Ueberschuss\")\nvar Freigabe_Waermepumpe_Vorhersage = global.get(\"Freigabe_Waermepumpe_Vorhersage\")\n\nif (Freigabe_Waermepumpe_Ueberschuss && Freigabe_Waermepumpe_Vorhersage){\n    msg.payload = 1\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1040,
+        "wires": [
+            [
+                "736c866f602d956f",
+                "5dceec49346fcacb",
+                "837edad05243a1da"
+            ]
+        ]
+    },
+    {
+        "id": "736c866f602d956f",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "c5d2118f761eb801",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "da378e5a7e912eac",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "WP Ausschalten",
+        "func": "var max_Netzbezug = global.get(\"max_Netzbezug\")\nvar Netzbezug = global.get(\"Netzbezug\")\n\nvar Mindesterzeugung_PV = global.get(\"Mindesterzeugung_PV\")\nvar Erzeugung = global.get(\"Erzeugung\")\n\nif(Netzbezug > max_Netzbezug){\n    msg.payload = 0\n    return msg;\n}\n\nif(Erzeugung < Mindesterzeugung_PV){\n    msg.payload = 0\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1100,
+        "wires": [
+            [
+                "c5d2118f761eb801",
+                "718a0cda91d36b56",
+                "837edad05243a1da"
+            ]
+        ]
+    },
+    {
+        "id": "ae1cc9edb685c15d",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1100,
+        "wires": [
+            [
+                "da378e5a7e912eac"
+            ]
+        ]
+    },
+    {
+        "id": "075813ebe9b186be",
+        "type": "ioBroker in",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "attrname": "",
+        "topic": "modbus.5.holdingRegisters.2.36_Battery_Power",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "outFormat": "MQTT",
+        "x": 220,
+        "y": 440,
+        "wires": [
+            [
+                "dac27b9156d35d74"
+            ]
+        ]
+    },
+    {
+        "id": "dac27b9156d35d74",
+        "type": "change",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Netzbezug",
+                "pt": "global",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "131b21fe4ddc58ac",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Netzbezug",
+        "payloadType": "global",
+        "x": 1150,
+        "y": 440,
+        "wires": [
+            [
+                "c4d8c110018be856",
+                "9294613d22c179b5"
+            ]
+        ]
+    },
+    {
+        "id": "c4d8c110018be856",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ead044746c5633b2",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "9e4e9018cf40ddb4"
+            ]
+        ]
+    },
+    {
+        "id": "9e4e9018cf40ddb4",
+        "type": "change",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "max_Netzbezug",
+                "pt": "global",
+                "to": "1000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b8a9096f4780ad9",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "max_Netzbezug",
+        "payloadType": "global",
+        "x": 1170,
+        "y": 320,
+        "wires": [
+            [
+                "8a1cfa4c3b419ea8",
+                "28f28d1e0c36ccaa"
+            ]
+        ]
+    },
+    {
+        "id": "8a1cfa4c3b419ea8",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "5dceec49346fcacb",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "if (msg.payload == 1){\n    msg.payload = 1;\n} else {\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1000,
+        "wires": [
+            [
+                "5dfab51a7f962a84"
+            ]
+        ]
+    },
+    {
+        "id": "5dfab51a7f962a84",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Waermepumpe_Anschalten",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 930,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "c410f905bbbb600a",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Mindestueberschuss_PV",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1670,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d9c0727c2740bed6",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Mindestvorhersage_PV",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1660,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "28f28d1e0c36ccaa",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_max_Netzbezug",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1640,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1cf0654a2a877f3a",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Ueberschuss_PV",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9294613d22c179b5",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Netzbezug",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1620,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "1951c6bf2b2da8f3",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Freigabe_Waermepumpe_Ueberschuss",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1870,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "67a459c3fe548e74",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Freigabe_Waermepumpe_Vorhersage",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1870,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "73036576b334d07d",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "if (msg.payload){\n    msg.payload = 1;\n}else{\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 560,
+        "wires": [
+            [
+                "1951c6bf2b2da8f3"
+            ]
+        ]
+    },
+    {
+        "id": "fb32aa07fe26ecd8",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "if (msg.payload){\n    msg.payload = 1;\n}else{\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 620,
+        "wires": [
+            [
+                "67a459c3fe548e74"
+            ]
+        ]
+    },
+    {
+        "id": "7ac8ae79e25c7ae6",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "if(typeof msg.payload1 != 'undefined'){\n    msg.payload = msg.payload1\n} else {\n    msg.payload = 0\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 700,
+        "wires": [
+            [
+                "a63293590d3a05c5",
+                "55d35c4dd87d54f0"
+            ]
+        ]
+    },
+    {
+        "id": "e0d638c177115c79",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "if(typeof msg.payload2 != 'undefined'){\n    msg.payload = msg.payload2\n} else {\n    msg.payload = 0\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 740,
+        "wires": [
+            [
+                "d22f03954e851d02",
+                "8fb49856c5f31a1e"
+            ]
+        ]
+    },
+    {
+        "id": "3837c60c30598197",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "if(typeof msg.payload3 != 'undefined'){\n    msg.payload = msg.payload3\n} else {\n    msg.payload = 0\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 780,
+        "wires": [
+            [
+                "73a14f257075a419",
+                "b0ce012c7417fbee"
+            ]
+        ]
+    },
+    {
+        "id": "55d35c4dd87d54f0",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Freigabe_Waermepumpe_Vorhersage_15min",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1510,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "8fb49856c5f31a1e",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Freigabe_Waermepumpe_Vorhersage_30min",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1510,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "b0ce012c7417fbee",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Freigabe_Waermepumpe_Vorhersage_45min",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1510,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "718a0cda91d36b56",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "if (msg.payload == 0){\n    msg.payload = 1;\n} else {\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1160,
+        "wires": [
+            [
+                "2086a9f0685e7969"
+            ]
+        ]
+    },
+    {
+        "id": "2086a9f0685e7969",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Waermepumpe_Ausschalten",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 940,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "8d82796be2988258",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 370,
+        "y": 1300,
+        "wires": [
+            [
+                "85b7f083296fd2e6"
+            ]
+        ]
+    },
+    {
+        "id": "e2c0b0665fd011a0",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 370,
+        "y": 1340,
+        "wires": [
+            [
+                "85b7f083296fd2e6"
+            ]
+        ]
+    },
+    {
+        "id": "632799248deea83d",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload11",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7fe51144740fc7a7",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload22",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "5a4bf48f82c7b40d",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload33",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "6ad3f18c25c12765",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "89e7671e4a498cce"
+            ]
+        ]
+    },
+    {
+        "id": "89e7671e4a498cce",
+        "type": "change",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Mindesterzeugung_PV",
+                "pt": "global",
+                "to": "1000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0c18f1d3103f57b",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Mindesterzeugung_PV",
+        "payloadType": "global",
+        "x": 1190,
+        "y": 260,
+        "wires": [
+            [
+                "b69d10c1df1783ac",
+                "c4322db4d06ca4a2"
+            ]
+        ]
+    },
+    {
+        "id": "b69d10c1df1783ac",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c4322db4d06ca4a2",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Mindesterzeugung_PV",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1660,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3fa85484b311b7d5",
+        "type": "ioBroker in",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Wechselrichter_gesamt.Leistung_AC",
+        "attrname": "",
+        "topic": "mqtt.0.Wechselrichter_gesamt.Leistung_AC",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "outFormat": "MQTT",
+        "x": 180,
+        "y": 500,
+        "wires": [
+            [
+                "18e7e912432a2087"
+            ]
+        ]
+    },
+    {
+        "id": "18e7e912432a2087",
+        "type": "change",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Erzeugung",
+                "pt": "global",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "072cf50c903d4906",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Erzeugung",
+        "payloadType": "global",
+        "x": 1150,
+        "y": 500,
+        "wires": [
+            [
+                "3619c55f585b95df",
+                "321ea00c30ebc5e7"
+            ]
+        ]
+    },
+    {
+        "id": "3619c55f585b95df",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "321ea00c30ebc5e7",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "WP_PV_Erzeugung",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1620,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8473aa6af9053fd3",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "0709847cd4c06cf9",
+        "type": "comment",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Überschusssteuerung Wärmepumpe",
+        "info": "",
+        "x": 180,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "85b7f083296fd2e6",
+        "type": "ioBroker out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "topic": "modbus.3.inputRegisters.30002_WP_PV-Ueberschuss",
+        "ack": "false",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 700,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "837edad05243a1da",
+        "type": "ioBroker out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "topic": "modbus.3.inputRegisters.30002_WP_PV-Ueberschuss",
+        "ack": "false",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 740,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f5fb07c7c585d586",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload3",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "6a1e6805deb8f28d",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload2",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "ede0ddfc0c429b82",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload1",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0c9481b1aacc412d",
+        "type": "influxdb batch",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "Test",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "9af8a25487bdeb58",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "func": "var solarData = Object.entries(msg.payload.result.watts);\nvar data_out = [];\n\nfor(let i=0; i<(solarData.length/4-1); i++){\nvar temp = \n    {\n    measurement: \"Test\",\n    fields: {\n        A: solarData[i][1]\n    },\n    timestamp: \tgetUnixTimestamp(solarData[i][0])*1000000\n    }\n    data_out.push(temp);\n}\n\nmsg.payload = data_out;\n/*msg.payload = [\n    data_out,\n    \n        {\n    measurement: \"Test\",\n     fields: {\n        A: 500\n    },\n    timestamp: \t1681064947944*1000000\n    }\n  ]\n  */\nreturn msg;\n\n\nfunction getUnixTimestamp(date){\n    var Data=date;\n    var data=Data.split(\" \");\n    var time=data[1];\n    data=data[0].split(\"-\");\n\n    var year=data[0];\n    var month=data[1]-1;    //notice the -1\n    var day=data[2]\n\n    time=time.split(\":\");\n    var hours=time[0];\n    var mins=time[1];\n    var secs=time[2];\n    var d= new Date(year,month,day,hours,mins,secs);\n    return d.getTime();\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 820,
+        "wires": [
+            [
+                "0c9481b1aacc412d",
+                "df09332d89aacbac"
+            ]
+        ]
+    },
+    {
+        "id": "df09332d89aacbac",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "eb80673f54c10551",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 820,
+        "wires": [
+            [
+                "9af8a25487bdeb58"
+            ]
+        ]
+    },
+    {
+        "id": "372f5c888b39542a",
+        "type": "comment",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Prognosedaten in InfluxDB schreiben",
+        "info": "",
+        "x": 210,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c57010af1e1501aa",
+        "type": "debug",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "debug 84",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "427fb35dd6bc8a1a",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Setze Heater Excess Bool",
+        "func": "var PV_Ueberschuss = flow.get(\"PV_Ueberschuss\");\nvar Temperatur_Speicher_unten = flow.get(\"Temperatur_Speicher_unten\");\nvar WP_laeuft = global.get(\"WP_laeuft_mit_PV_Ueberschuss\");\n\nif (WP_laeuft == true && PV_Ueberschuss == 1 && Temperatur_Speicher_unten > 40){\n    global.set(\"HeaterExcessBool\", true);\n    msg.payload = 1;\n    //return msg;\n}else{\n    global.set(\"HeaterExcessBool\", false)\n    msg.payload = 0;\n    //return msg;\n}\n\n//Added from desperation 25.04.2024\nif (global.get(\"WP_laeuft_mit_PV_Ueberschuss\")==false){\n    global.set(\"HeaterExcessBool\", false)\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1500,
+        "wires": [
+            [
+                "612da653025c13a1",
+                "0156714096eed26d"
+            ]
+        ]
+    },
+    {
+        "id": "9d7a99b75271df4a",
+        "type": "comment",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Ansteuerung Fußbodenthermostate und Vorlaufanhebung ",
+        "info": "",
+        "x": 270,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "ef7eb1a671ba6297",
+        "type": "inject",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 1480,
+        "wires": [
+            [
+                "427fb35dd6bc8a1a",
+                "ba4b612f34ed2cbd",
+                "03ea55d6442dfa96",
+                "29a7e79bd751feb5"
+            ]
+        ]
+    },
+    {
+        "id": "612da653025c13a1",
+        "type": "ioBroker out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "topic": "modbus.3.inputRegisters.30003_Heater_Excess_Bool",
+        "ack": "false",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 800,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "03ea55d6442dfa96",
+        "type": "ioBroker get",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "topic": "modbus.3.inputRegisters.30002_WP_PV-Ueberschuss",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 560,
+        "y": 1460,
+        "wires": [
+            [
+                "6c13ee493e79dec3"
+            ]
+        ]
+    },
+    {
+        "id": "ba4b612f34ed2cbd",
+        "type": "ioBroker get",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "topic": "node-red.0.Heizung_CMI.Eingaenge.T Speicher unten",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 560,
+        "y": 1540,
+        "wires": [
+            [
+                "233eb91be3fe264a"
+            ]
+        ]
+    },
+    {
+        "id": "6c13ee493e79dec3",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "function 3",
+        "func": "flow.set(\"PV_Ueberschuss\", Number(msg.payload));\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "233eb91be3fe264a",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "function 4",
+        "func": "flow.set(\"Temperatur_Speicher_unten\", Number(msg.payload));\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29a7e79bd751feb5",
+        "type": "ioBroker get",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "",
+        "topic": "modbus.3.coils.1_WP_an_PV-Ueberschuss",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 530,
+        "y": 1580,
+        "wires": [
+            [
+                "c18b612815ecbe1c"
+            ]
+        ]
+    },
+    {
+        "id": "c18b612815ecbe1c",
+        "type": "function",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "name": "Set global WP_laeuft_mit_PV_Ueberschuss",
+        "func": "if(msg.payload == \"false\"){\n    global.set(\"WP_laeuft_mit_PV_Ueberschuss\", false);\n    msg.payload = false;\n}\n\nif(msg.payload == \"true\"){\n    global.set(\"WP_laeuft_mit_PV_Ueberschuss\", true);\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0156714096eed26d",
+        "type": "influxdb out",
+        "z": "802e1c685bb8981f",
+        "g": "259b48fedec91c81",
+        "influxdb": "856ef1e9.1afab",
+        "name": "",
+        "measurement": "Heater_Excess_Bool",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1190,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "856ef1e9.1afab",
+        "type": "influxdb",
+        "hostname": "192.168.178.132",
+        "port": "8086",
+        "protocol": "http",
+        "database": "smarthome",
+        "name": "Hausautomatisierung",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://192.168.178.132:8086",
+        "rejectUnauthorized": false
+    }
+]
